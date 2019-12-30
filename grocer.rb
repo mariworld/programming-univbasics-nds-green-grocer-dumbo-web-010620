@@ -94,6 +94,7 @@ def apply_clearance(cart)
   while i < cart.length do
     if cart[i][:clearance] == true
       new_price = cart[i][:price]*0.80
+      binding.pry
     end
     i += 1
   end
