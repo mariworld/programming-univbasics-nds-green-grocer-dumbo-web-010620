@@ -115,7 +115,7 @@ def checkout(cart, coupons)
       total += couponed_cart[i][:price]*couponed_cart[i][:count]
       i += 1
     end
-    total
+  total
 end
 
  # Consult README for inputs and outputs
