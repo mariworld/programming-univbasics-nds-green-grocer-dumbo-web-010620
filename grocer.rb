@@ -95,6 +95,7 @@ def apply_clearance(cart)
     new_price = cart[i][:price]*0.80
     if cart[i][:clearance]
       cart[i][:price] = new_price
+      new_cart << cart[i][:price]
     end
     i += 1
   end
