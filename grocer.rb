@@ -95,10 +95,10 @@ def apply_clearance(cart)
     if cart[i][:clearance] == true
        cart[i][:price] = (cart[i][:price] - cart[i][:price]*0.20).round(2)
     end
-    new_cart << cart
+    cart
     i += 1
   end
-  new_cart
+  cart
 end
 
 #binding.pry
