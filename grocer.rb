@@ -90,7 +90,6 @@ end
 def apply_clearance(cart)
   i = 0
   #binding.pry
-  new_cart = []
   while i < cart.length do
     if cart[i][:clearance] == true
        cart[i][:price] = (cart[i][:price] - cart[i][:price]*0.20).round(2)
